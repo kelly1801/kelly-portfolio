@@ -9,11 +9,19 @@
       src="https://kit.fontawesome.com/7453c59f9a.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("LMJmwinn9qYcgibQa");
+   })();
+</script>
     <script src="app.js" defer></script>
     <title>Kelly Chara</title>
   </head>
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img src="./assets/darkLogo.svg" class="personal-logo" alt="" />
@@ -36,15 +44,15 @@
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect"
-              >Contact</a
+              class="nav__link--anchor link__hover-effect" 
+              onclick="toggleModal()">Contact</a
             >
           </li>
           <li class="nav__link click-resize">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect"
-              ><i class="fas fa-adjust"></i
+              ><i class="fas fa-adjust" onclick="addDarkTheme()"></i
             ></a>
           </li>
         </ul>
@@ -60,7 +68,7 @@
             strong passion for building web applications with great user
             experiences.
             <br />
-            Here's a bit more <span class="color-text">about me</span>
+            Here's a bit more <span class="color-text click-resize" onclick="toggleModal()">about me</span>
           </p>
           <div class="social__list">
             <a href="#" class="social__link click-resize"
@@ -75,7 +83,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click-resize">
+      <button class="mail__btn click-resize" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -133,7 +141,7 @@ I currently work in creative freelance and personal projects that have helped me
   I'm currently open to new opportunities
 </h3>
 
-<form id="contact__form" action="">
+<form id="contact__form" onsubmit="contact(event)">
 <div class="form__item">
   <label class="form__item--label">Name</label>
 <input class=" input"name="user_name" type="text" required>
@@ -153,20 +161,66 @@ I currently work in creative freelance and personal projects that have helped me
 </button>
 </form>
 <div class="modal__overlay modal__overlay--loading">
-  <i class="fas fa-spiner"></i>
+  <i class="fa-solid fa-spinner"></i>
+</div>
+
+<div class="modal__overlay modal__overlay--succes">
+  Thanks for the message! Looking forwars to speaking to you soon
 </div>
     </div>
+    <i class="fa-solid fa-xmark modal__exit click-resize" onclick="toggleModal()"></i>
   </div>
+<img src="./assets/circle.svg" class="shape shape--0">
+<img src="./assets/semi circle.svg" class="shape shape--1">
+<img src="./assets/squiggly.svg" class="shape shape--2">
+<img src="./assets/triangle.svg" class="shape shape--3">
+<img src="./assets/circle.svg" class="shape shape--4">
+<img src="./assets/semi circle.svg" class="shape shape--5">
+<img src="./assets/squiggly.svg" class="shape shape--6">
+<img src="./assets/triangle.svg" class="shape shape--7">
+<img src="./assets/circle.svg" class="shape shape--8">
 
-  </main>
-    <section id="projects">
+
+</main>
+    <section id="projects" onmousemove="moveBackground(event)">
       <div class="container">
         <div class="row">
           <h1 class="section__title">
             Here are some of my <span class="color-text">projects.</span>
           </h1>
           <ul class="project__list">
-            <li class="project">
+            <li class="project" onclick="toggleModal()">
+              <figure class="project__wrapper" >
+                <div class="project__wrapper--bg"></div>
+
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <figcaption class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--subtitle">
+                    html, css, tailwind, react, redux
+                  </h4>
+                  <p class="project_description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus iure qui dolorum animi error quam earum
+                    cupiditate nam sed quae.
+                  </p>
+                  <div class="projects__description--links">
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="project" onclick="toggleModal()">
               <figure class="project__wrapper">
                 <div class="project__wrapper--bg"></div>
 
@@ -197,38 +251,7 @@ I currently work in creative freelance and personal projects that have helped me
               </figure>
             </li>
 
-            <li class="project">
-              <figure class="project__wrapper">
-                <div class="project__wrapper--bg"></div>
-
-                <img
-                  src="./assets/blinker mockup.png"
-                  class="project__img"
-                  alt=""
-                />
-                <figcaption class="project__description">
-                  <h3 class="project__description--title">Car sales project</h3>
-                  <h4 class="project__description--subtitle">
-                    html, css, tailwind, react, redux
-                  </h4>
-                  <p class="project_description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus iure qui dolorum animi error quam earum
-                    cupiditate nam sed quae.
-                  </p>
-                  <div class="projects__description--links">
-                    <a href="" class="project__description--anchor"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                    <a href="" class="project__description--anchor"
-                      ><i class="fa-solid fa-link"></i
-                    ></a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-
-            <li class="project">
+            <li class="project" onclick="toggleModal()">
               <figure class="project__wrapper">
                 <div class="project__wrapper--bg"></div>
 
@@ -265,7 +288,7 @@ I currently work in creative freelance and personal projects that have helped me
   </main>
     
   
-  <footer id="footer">
+  <footer id="footer" onmousemove="moveBackground(event)">
     
 
     <figure class="footer__logo">
