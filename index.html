@@ -83,8 +83,79 @@
       </a>
     </section>
   <div class="modal">
-    <div class="modal__half modal__about">Here is a bit about me</div>
-    <div class="modal__half modal__contact">let's have a chat</div>
+    <div class="modal__half modal__about">
+<h3 class="modal__tittle modal__tittle--about">Here is a bit about me.</h3>
+<h4 class="modal__subtitle modal__subtitle--about">Frontend sofware developer</h4>
+<p class="modal__para modal__para--about"> I'm a 21 year-old Colombian <b class="color-text">self taught frontend developer</b> with a strong <b class="color-text">passion for tecnology</b>.
+<br>
+I currently work in creative freelance and personal projects that have helped me develop an incredible <b class="color-text">capacity to develop the best web solutions.</b>
+</p>
+
+<div class="modal__languages">
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/html.svg" alt="">
+    <figcaption class="language__name">Html</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/css.svg" alt="">
+    <figcaption class="language__name">Css</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/javascript.svg" alt="">
+    <figcaption class="language__name">Javascript</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/tailwind.svg" alt="">
+    <figcaption class="language__name">Tailwind</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/sass.svg" alt="">
+    <figcaption class="language__name">Sass</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/bootstrap.svg" alt="">
+    <figcaption class="language__name">Bootstrap</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/git.svg" alt="">
+    <figcaption class="language__name">Git</figcaption>
+  </figure>
+  <figure class="language__wrapper">
+    <img class="language__img" src="./assets/react.svg" alt="">
+    <figcaption class="language__name">React</figcaption>
+  </figure>
+
+</div>
+    </div>
+    <div class="modal__half modal__contact">
+<h3 class="modal__title modal__tittle--contact">Let's have a chat</h3>
+<h3 class="modal__subtitle modal__subtitle--contact">
+  I'm currently open to new opportunities
+</h3>
+
+<form id="contact__form" action="">
+<div class="form__item">
+  <label class="form__item--label">Name</label>
+<input class=" input"name="user_name" type="text" required>
+</div>
+
+<div class="form__item">
+  <label class="form__item--label">E-mail</label>
+<input class=" input"name="user_email" type="email" required>
+</div>
+
+<div class="form__item">
+  <label class="form__item--label">Message</label>
+<textarea class=" input"name="message" type="text" required></textarea>
+</div>
+<button id="contact__submit" class="form__submit">
+  Send it my way
+</button>
+</form>
+<div class="modal__overlay modal__overlay--loading">
+  <i class="fas fa-spiner"></i>
+</div>
+    </div>
   </div>
 
   </main>
