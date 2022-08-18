@@ -1,47 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7453c59f9a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js" defer></script>
-    <script src="https://kit.fontawesome.com/7453c59f9a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Kelly Chara</title>
+  </head>
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img src="./assets/darkLogo.svg" id="personal-logo" alt="">
-            </figure>
+      <nav>
+        <figure>
+          <img src="./assets/darkLogo.svg" id="personal-logo" alt="" />
+        </figure>
         <ul class="nav__link--list">
-            <li class="nav__link">
-                <a href="#" class="nav__link--anchor link__hover-effect link__hover-efect--black">About</a>
-            </li>
-            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-efect--black">Projects</a></li>
-            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-efect--black">Contact</a></li>
-            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-efect--black"><i class="fas fa-adjust"></i></a></li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-efect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-efect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-efect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click-resize">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-efect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
         </ul>
-        
-        </nav>
+      </nav>
 
-        <header>
-            <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h2 class="title title--secondary color-text">I'm Kelly</h2>
-                <p class="header__para">I'm a self taught <span class="color-text">Front-end software engineer</span> with a strong passion for building web applications with great user experiences.
-                    <br>
-                    Here's a bit more <span class="color-text">about me</span>
-                </p>
-                <div class="social__list">
-                    <a href="" class="social__link click-resize"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="" class="social__link click-resize"><i class="fa-brands fa-github"></i></a>
-                    <a href="" class="social__link click-resize"><i class="fa-solid fa-file-pdf"></i></a>
-                </div>
-            </div>
-        </header>
+      <header>
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h2 class="title title--secondary color-text">I'm Kelly</h2>
+          <p class="header__para">
+            I'm a self taught
+            <span class="color-text">Front-end software engineer</span> with a
+            strong passion for building web applications with great user
+            experiences.
+            <br />
+            Here's a bit more <span class="color-text">about me</span>
+          </p>
+          <div class="social__list">
+            <a href="#" class="social__link click-resize"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social__link click-resize"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" class="social__link click-resize"
+              ><i class="fa-solid fa-file-pdf"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+      <button class="mail__btn click-resize">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
     </section>
-</body>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="color-text">projects.</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <figure class="project__wrapper">
+                <div class="project__wrapper--bg"></div>
+
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <figcaption class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--subtitle">
+                    html, css, tailwind, react, redux
+                  </h4>
+                  <p class="project_description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus iure qui dolorum animi error quam earum
+                    cupiditate nam sed quae.
+                  </p>
+                  <div class="projects__description--links">
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="project">
+              <figure class="project__wrapper">
+                <div class="project__wrapper--bg"></div>
+
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <figcaption class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--subtitle">
+                    html, css, tailwind, react, redux
+                  </h4>
+                  <p class="project_description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus iure qui dolorum animi error quam earum
+                    cupiditate nam sed quae.
+                  </p>
+                  <div class="projects__description--links">
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li class="project">
+              <figure class="project__wrapper">
+                <div class="project__wrapper--bg"></div>
+
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <figcaption class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--subtitle">
+                    html, css, tailwind, react, redux
+                  </h4>
+                  <p class="project_description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus iure qui dolorum animi error quam earum
+                    cupiditate nam sed quae.
+                  </p>
+                  <div class="projects__description--links">
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="" class="project__description--anchor"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
