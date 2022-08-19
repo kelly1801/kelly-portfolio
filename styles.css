@@ -3,7 +3,7 @@
   --dark: #242424;
   --grey: rgb(245, 245, 245);
   --highlight: rgb(252, 91, 118);
-  --secondary-highlight: rgba(14, 255, 999, 0.81);
+  --secondary-highlight: #AA7BE0
 }
 * {
   list-style: none;
