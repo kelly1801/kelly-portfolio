@@ -453,10 +453,12 @@ z-index: -1;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 5rem;
+  
 }
 .project__img {
   width: 100%;
   transition: all 300ms ease;
+  background-color: aqua;
 }
 .project__wrapper {
   position: relative;
@@ -464,18 +466,21 @@ z-index: -1;
   box-shadow: 0 20px 80px rgb(0, 0, 0, 0.45);
   overflow: hidden;
   margin: 5rem 0;
+  
 }
+
 
 .project__wrapper:hover .project__description {
   opacity: 1;
   transform: translateY(-50%);
+  
 }
 
 .project__wrapper:hover .project__img {
   transform: scale(1.07);
   filter: blur(5px);
+ 
 }
-
 .project__description {
   position: absolute;
   top: 50%;
@@ -486,6 +491,12 @@ z-index: -1;
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
   transform: translateY(100%);
+  font-weight: 600;
+}
+
+.project__description--anchor {
+  font-size: 2rem;
+  color: #c0c4cc;
 }
 
 .project__wrapper--bg {
